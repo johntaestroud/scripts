@@ -1,0 +1,16 @@
+import os
+
+def openFile():
+    try:
+        os.startfile('')
+     
+     except Exception, e:
+         print str(e)
+        
+        
+def closeFile():
+    try:
+        os.startfile('TASKKILL /F /IM name.exe') 
+     
+     except Exception, e:
+         print str(e)
