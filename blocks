@@ -14,3 +14,31 @@ def closeFile():
      
      except Exception, e:
          print str(e)
+
+try:
+    pk = a_method_that_may_rise_an_exception()
+except HandleableErrors:
+    pk = False
+
+if pk:
+    process_pk()
+else:
+    method_to_be_executed_in_case_of_exception_or_pk_is_false()
+    
+    ----
+def openFile():
+    try:
+     os.startfile('name.exe')
+     name = object.dialog
+     except Exception, e:
+         print str(e)
+
+try:
+    pk = a_method_that_may_rise_an_exception()
+except HandleableErrors:
+    pk = False
+
+if pk:
+    process_pk()
+else:
+    method_to_be_executed_in_case_of_exception_or_pk_is_false()
